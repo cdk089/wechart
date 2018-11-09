@@ -1,0 +1,10 @@
+<!--pages/demo/demo.wxml-->
+<view class='container'>
+  <scroll-view bindscroll="bindscroll" scroll-y style='height:{{_height}}px'>
+    <view class='module' wx:for='{{dataList}}' wx:item='{{item}}' wx:key='{{item.id}}'>
+      <view class='_title'>{{item.title}}</view>
+      <video id='{{item.id}}' data-id='{{item.id}}' objectFit='contain'  poster controls bindtimeupdate='bindtimeupdate' bindplay="bindplay" bindpause="bindpause" danmu-list='{{danmu}}' src='{{item.src}}' ></video>
+      <view class='segmentingLine'></view>
+    </view>
+  </scroll-view>
+</view>

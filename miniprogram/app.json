@@ -1,0 +1,22 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/videoDetilas/videoDetilas",
+    "pages/demoDetilas/demoDetilas",
+    "pages/demo/demo",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+  ],
+  "window": {
+    "backgroundColor": "#1AAD19",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "视频",
+    "navigationBarTextStyle": "black"
+  }
+}

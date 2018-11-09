@@ -1,0 +1,47 @@
+<view class="container" id='container'>
+  <scroll-view scroll-y style='height:{{system.windowHeight}}px' bindscroll='bindscroll' throttle="{{false}}">
+    <view class='videoContent' id="myVideo">
+      <!-- <video src='{{dataList.videoSrc}}' style='height:{{system.windowHeight-40}}px;width:100%;'></video> -->
+      <image src='http://spic.xafpz.com/5bdc07b3d03c9.jpg' style='height:{{system.windowHeight-40}}px;width:100%;'></image>
+    </view>
+    <view class='share {{animation}}' style='opacity:{{opacity}}'>
+      <view class='share_module'>
+        <view class='inline_block shareIcon'>
+          <image class='icon100' src='{{dataList.imageSrc}}'></image>
+        </view>
+        <view class='inline_block'>点赞</view>
+      </view>
+
+      <view class='share_module'>
+        <view class='inline_block shareIcon'>
+          <image class='icon100' src='http://spic.xafpz.com/5bdc07b3d03c9.jpg'></image>
+        </view>
+        <!-- <view class='inline_block'>分享</view> -->
+        <button open-type='share' class='share_btn'>分享</button>
+      </view>
+    </view>
+    
+    <view class='ul_info'>
+      <view class='module flex'>
+        <view class='authIcon'>
+          <image src='http://spic.xafpz.com/5bdc07b3d03c9.jpg' class='icon100'></image>
+        </view>
+        <view class='height100'>
+          <view class='line'>{{dataList.author}}</view>
+          <view class='line'>{{dataList.time}}</view>
+        </view>
+      </view>
+      <view class='module'>
+        <view class='title'>{{dataList.title}}</view>
+        <view class='context'>{{dataList.context}}</view>
+      </view>
+      <view class='module'>
+        <view class='recomTitle'>推荐视频</view>
+        <view class='li_info' wx:for='{{recomentList}}' wx:key='item' catchtap='recomNavigate' data-info='{{item}}'>
+          <view class='_title'>{{item.title}}</view>
+          <image src='{{item.imageSrc}}' class='icon100'></image>
+        </view>        
+      </view>
+    </view>
+  </scroll-view>
+</view>

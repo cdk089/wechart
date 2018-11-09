@@ -1,0 +1,12 @@
+<view class='container'>
+  <scroll-view class='scroll_contai' scroll-y style='height:{{system.windowHeight}}px'>
+    <view class='ul_info'>
+      <view class='li_info'>
+        <view class='title'>世界丰富多彩</view>
+        <view class='module'>
+          <image class='icon100' src='http://spic.xafpz.com/5bdc0fa0ce596.png' mode='aspectFill'></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,147 @@
+/* pages/videoDetilas/videoDetilas.wxss */
+.videoContent{
+  width:100%;
+}
+.ul_info{
+  margin:0 auto;
+  width:710rpx;
+
+}
+.module{
+  width:100%;
+  margin-top:20rpx;
+}
+.module .line{
+  height:50rpx;
+  line-height:50rpx;
+  margin-right:20rpx;
+  font-size:32rpx;
+}
+.inline_block{
+  display: inline-block;
+}
+.title{
+  font-size:36rpx;
+  height:50rpx;
+  line-height:50rpx;
+  font-weight: 900;
+  margin-bottom:20rpx;
+}
+.context{
+  font-size:28rpx;
+  line-height:30rpx;
+  color:#999;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  height:140rpx;
+}
+.authIcon{
+  width:100rpx;
+  height:100rpx!important;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin-right: 20rpx;  
+}
+.height100{
+  height:100rpx!important;
+}
+.icon100{
+  width:100%;
+  height:100%;
+}
+.li_info{
+  display: inline-block;
+  width:340rpx;
+  height:425rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  position:relative;
+}
+.li_info:nth-of-type(odd){
+  margin-left:30rpx;
+}
+._title{
+  position:absolute;
+  top:0;
+  left:0;
+  width:303rpx;
+  background:rgba(0, 0, 0, .5);
+  color:#fff;
+  line-height:40rpx;
+  font-size:32rpx;
+  padding:10rpx 20rpx;
+}
+.share{
+  width:100%;
+  background:#000;
+  color:#fff;
+  position:fixed;
+  bottom:0;
+  left:0;
+  height:40px;
+  z-index:1;
+  align-items: center;
+  display: flex;
+  line-height:40px;
+}
+.share_module{
+  flex:2;
+  display: flex;
+  align-items: center;
+}
+.share_module:nth-last-child(2){
+  flex: 5
+}
+.animation{
+  animation: animation forwards .5s 1 linear;
+}
+@keyframes animation {
+  0% {
+    bottom: 0;
+  }
+  100%{
+    bottom:-40px;
+  }
+}
+._animation{
+  animation: _animation forwards .5s 1 linear;
+}
+@keyframes _animation {
+  0% {
+    bottom: -40px;
+  }
+  100%{
+    bottom:0;
+  }
+}
+.recomTitle{
+  text-align: center;
+  color:#999;
+  width:100%;
+  height:50rpx;
+  line-height:50rpx;
+  border-top: 1rpx solid #efefef;
+  padding:20rpx 0;
+  font-size:32rpx;
+}
+.shareIcon{
+  width:50rpx;
+  height:50rpx;
+  /* flex: 1; */
+  padding:0 20rpx;
+}
+.share_module view{
+  height:50rpx;
+  line-height:50rpx;
+  /* flex: 1 */
+}
+.share_btn{
+  width:100rpx;
+  height:50rpx;
+  line-height:50rpx;
+  font-size: 32rpx;
+  padding:0;
+  margin:0;
+}
