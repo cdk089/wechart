@@ -11,7 +11,7 @@ Page({
     hasVideoShow: false, //有没有视频播放
   },
   _data: {
-
+    text:'text'
   },
   /**
    * 生命周期函数--监听页面加载
