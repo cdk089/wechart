@@ -10,7 +10,9 @@ Page({
     videoShow: {}, //当前正在播放的视频信息
     hasVideoShow: false, //有没有视频播放
   },
+  _data: {
 
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -127,7 +129,7 @@ Page({
         videoShow: obj,
         hasVideoShow: true
       })
-    }    
+    }
   },
   //视频暂停
   bindpause: function(e) {
